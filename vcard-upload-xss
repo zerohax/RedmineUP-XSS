@@ -1,0 +1,14 @@
+Vulnerability: Cross-Site Scripting via Import Vcard
+
+Description: An authenticated user with access to contacts is able to upload vcard files that contain cross-site scripting payload. Script
+will execute once vcard is successfully imported. 
+
+# Product: Redmine CRM Plugin 
+# Vulnerable version: CRM < 4.2.4
+# Reference: https://www.redmineup.com/pages/plugins/crm/updates (Apr 15, 2019 (Version: 4.2.4))
+----
+PoC:
+
+Upload a file that contains a payload:
+Filename: vcardXSS
+<script>alert("XSS! on your Vcards!")</script>
