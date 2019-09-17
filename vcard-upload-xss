@@ -1,5 +1,5 @@
 Vulnerability: Cross-Site Scripting via Import Vcard
-
+# Tophe Guevara / Deltek
 Description: An authenticated user with access to contacts is able to upload vcard files that contain cross-site scripting payload. Script
 will execute once vcard is successfully imported. 
 
